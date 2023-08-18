@@ -17,13 +17,25 @@ let colorPicker = document.getElementById("color-picker");
 //functions
 //text-style
 bold.addEventListener('click', () => {
-    text.style.fontWeight ="bold"
+    if(text.style.fontWeight ==="bold") {
+        text.style.fontWeight ="normal"
+    } else {
+        text.style.fontWeight ="bold"
+    }
 })
 italic.addEventListener('click', () => {
-    text.style.fontStyle ="italic"
+    if(text.style.fontStyle ==="italic") {
+        text.style.fontStyle ="normal"
+    } else {
+        text.style.fontStyle ="italic"
+    }
 })
 underline.addEventListener('click', () => {
-    text.style.textDecoration ="underline"
+    if(text.style.textDecoration ==="underline") {
+        text.style.textDecoration ="none"
+    } else {
+        text.style.textDecoration ="underline"
+    }
 })
 
 //text-alignment
